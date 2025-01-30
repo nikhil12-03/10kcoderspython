@@ -1,2 +1,41 @@
 SIMPLE: https://docs.google.com/document/d/1qRfIbG-JVGjmEbdVlTtK4XDVEwuDPvbn/edit
 MEDIUM :https://docs.google.com/document/d/11gpErhUs5CZQhVTZ7BQEJn-XpB8fTpJZ/edit
+
+1.Write a program that takes a string, string should be of even length. Divide the string into two equals parts, check the number of vowels in both the parts of the string. If both parts of string have same number of vowels then return true otherwise return false.
+
+
+def check_vowels(sub1,sub2):
+    vowels="aeiouAEIOU"
+    sub1_vowel=0
+    sub2_vowel=0
+    for char in sub1:
+        if char in vowels:
+            sub1_vowel+=1
+    for char in sub2:
+        if char in vowels:
+            sub2_vowel+=1
+    if sub1_vowel==sub2_vowel:
+        print("yes")
+    else:
+        print("no")
+
+name=input("enter the string with even length:")
+mid=int(len(name)/2)
+sub1=name[:mid]
+sub2=name[mid:]
+print(sub1,sub2)
+check_vowels(sub1,sub2)
+
+2.Write a program that takes array of numbers as input, among the numbers in array, check how many numbers starts with the same digit and ends with the same digits. Print the count of such kind of numbers in the given array.
+
+def check_digits_start_end(number):
+    count=0
+    for num in number:
+        num_str=str(num)
+        if num_str[0]==num_str[-1]:
+            count+=1
+    return count
+user_input = input("Enter numbers separated by spaces: ")
+numbers = list(map(int, user_input.split()))
+print(check_digits_start_end(numbers))
+    
