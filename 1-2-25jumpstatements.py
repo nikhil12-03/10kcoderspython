@@ -23,10 +23,28 @@ for i in range(0,21):
         continue
     print(i) 
 
-
+#continue and break in nested for loop
+#the break statement will only brekas the loop in which it is writen
+#and doesnot disturb the outer loops
 for cls1 in range(1,10):
     for roll in range(1,20):
         if cls1==5:
             break
         print(cls1,roll)  
-          
+
+
+#pass statement
+#to avoid leaving the block empty we use pass statement
+num=15
+if num % 4==0:
+    #instead of leaving the block empty when wedont want to include code in if-block we use pass
+    pass
+else:
+    print('pass statement is used')
+
+#we can use pass where ever we have to say that the block is empty
+# pass in function
+def example():
+    pass   
+#in this example we passed a function with pass satement 
+#instead of leaving it empty which will raise error 
