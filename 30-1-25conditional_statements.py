@@ -24,7 +24,7 @@ else:
 # # #else-if -> elif:
       
 
-# # current_units=int(input("enter the no of units:"))
+current_units=int(input("enter the no of units:"))
 if current_units <=100 :
     if current_units<=50:
            print("the current bill is:",current_units*0)
