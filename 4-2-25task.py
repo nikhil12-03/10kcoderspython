@@ -8,7 +8,7 @@ def evenlist(arr):
     return newlist
 arr=[1,2,3,4,5,6,7,8,9]
 print(evenlist(arr))
-
+ 
 #task-2
 #sum of even and odd numbers in list
 def sumoflist(li):
